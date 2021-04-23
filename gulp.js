@@ -35,5 +35,5 @@ function build_js(){
 }
 
 exports.css = css;
-exports.js = build_js;
+exports.js = js;
 exports.default = ()=>{};
