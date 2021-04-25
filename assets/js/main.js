@@ -29,15 +29,15 @@ function navegacion(event){
     var id = event.target.id;
     var indice = id.split("_")[1];
     var ruta = rutas[indice]+".html";
-    if(!controlAcceso(id) && usuario_logeado)
-    {
+    //if(!controlAcceso(id) && usuario_logeado)
+    //{
         location.href = ruta;
-    }else{
-        alert("Error, esta seccion requiere de logeo");
-    }
+    //}else{
+       // alert("Error, esta seccion requiere de logeo");
+    //}
 }
 
-function controlAcceso(indice){
+/*function controlAcceso(indice){
     for(i in bajo_logeo)
     {
         if(bajo_logeo[i] == indice)
@@ -46,4 +46,4 @@ function controlAcceso(indice){
         }
     }
     return false;
-}
+}*/

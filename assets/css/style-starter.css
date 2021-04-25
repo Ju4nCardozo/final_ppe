@@ -9556,11 +9556,11 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 body {
-  --primary-color: #742933;
+  --primary-color: #B47F45;
   --secondary: #0d5fa8;
   --bg-banner-layer: linear-gradient(to right, transparent, transparent);
-  --title-color: #1d2027;
-  --text-color: #5a5a5a;
+  --title-color: #000000;
+  --text-color: #4E4D59;
   --light-bg-color: #F7F9FC;
   --border-radius: 6px;
   --border-color: #eee;
@@ -9578,7 +9578,7 @@ body {
   --breadcrumb-bg: rgba(199, 223, 250, 0.2); }
 
 body.dark {
-  --primary-color: #dc8592;
+  --primary-color: #BF9004;
   --secondary: #0d5fa8;
   --bg-banner-layer: linear-gradient(to right, rgb(22, 22, 37), rgba(0, 0, 0, 0.4));
   --title-color: #ffffff;
@@ -10289,13 +10289,13 @@ nav#breadcrumbs a:hover {
     top: 9px; } }
 
 .w3l-index1 .content {
-  background-image: url(../images/banner.jpg);
+  background-image: url(../images/skateboard-1013286_1920.jpg);
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
   display: grid;
   align-items: center;
-  min-height: 700px;
+  min-height: 800px;
   padding-top: 90px;
   position: relative; }
   
@@ -10311,10 +10311,10 @@ nav#breadcrumbs a:hover {
 .w3l-index1 .content-left h3 {
   font-size: 50px;
   line-height: 57.5px;
-  color: var(--title-color); }
+  color: #A3A4BF }
 
 .w3l-index1 .content-left p {
-  color: var(--text-color);
+  color: #ffffff;
   font-size: 16px;
   line-height: 24.5px;
   max-width: 450px; }
