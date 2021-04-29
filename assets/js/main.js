@@ -1,5 +1,5 @@
 var secciones = [];
-var rutas = ["","index", "about", "contact"];
+var rutas = ["","index", "about", "contact","registro"];
 var bajo_logeo = ["seccion_2"];
 var usuario_logeado = true;
 
@@ -14,6 +14,7 @@ function asignarVariables(){
     secciones["seccion_1"] = document.getElementById("seccion_1");
     secciones["seccion_2"] = document.getElementById("seccion_2");
     secciones["seccion_3"] = document.getElementById("seccion_3");
+    secciones["seccion_4"] = document.getElementById("seccion_4");
 }
 
 function asignarEventos(){
