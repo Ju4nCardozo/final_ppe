@@ -9743,6 +9743,9 @@ a.brand-logo {
 a.brand-logo img {
   vertical-align: baseline; }
 
+.header-section{
+  padding-top: 50px;
+}
 .header-section p {
   max-width: 750px;
   margin: 0 auto; }
@@ -12161,7 +12164,7 @@ div#small-dialog iframe {
 
 main{
   width: 100%;
-  padding: 20px;
+  padding: 150px;
   margin: auto;
   margin-top: 130px;
 }

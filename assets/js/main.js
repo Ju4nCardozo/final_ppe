@@ -1,6 +1,6 @@
 var secciones = [];
 var rutas = ["","index", "about", "contact","registro"];
-var bajo_logeo = ["seccion_2"];
+var bajo_logeo = ["seccion_4"];
 var usuario_logeado = true;
 
 window.onload = init;
