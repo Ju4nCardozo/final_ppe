@@ -417,7 +417,7 @@ document.getElementById("form_login").addEventListener("submit",function(event){
     event.preventDefault();
     if(localStorage.getItem(user.value)!=null){
         let userr= JSON.parse(localStorage.getItem(user.value));
-        if(userr[0].pass==pass.value){
+        if(userr[0].pass==md5(pass.value.toString())){
             location.href = "contenido_exclusivo.html";
         }else{
             alert("Contraseña incorrecta");
@@ -460,7 +460,7 @@ document.getElementById("form_c-password").addEventListener("submit",function(ev
     {
         let user = Array({
             mail: mail_fp.value,
-            pass: pass_cp.value,
+            pass: md5(pass_cp.value.toString()),
         });
         localStorage.setItem(user_fp.value,JSON.stringify(user));
         login();
@@ -478,7 +478,7 @@ document.getElementById("form_sing-up").addEventListener("submit",function(event
     {
         let users = Array({
             mail: mail_su.value,
-            pass: pass_su.value,
+            pass: md5(pass_su.value.toString()),
         });
         localStorage.setItem(user_su.value,JSON.stringify(users));
         alert("Registro exitoso");
@@ -488,6 +488,7 @@ document.getElementById("form_sing-up").addEventListener("submit",function(event
         cpass_su.value = "";
     }
 });
+
 
 
 
