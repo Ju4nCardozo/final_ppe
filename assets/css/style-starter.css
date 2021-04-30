@@ -10462,6 +10462,36 @@ nav#breadcrumbs a:hover {
   color: var(--text-color);
   list-style-type: decimal; }
 
+.usuario{
+  /*display:inline-block;*/
+  margin:10px;
+  justify-self: center;
+}
+.grid_parent{
+    /*https://cssgrid-generator.netlify.com/*/
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px; 
+  background-color: var(--bg-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-box-shadow);
+  transition: 0.3s ease-in-out;
+  border: 1px solid var(--border-color);
+      
+  background:rgba(27, 26, 42, 0.96);
+  width: 855px;
+  height:600px;
+  margin:0 auto;
+  padding-top: 150px;
+}
+
+.grid_parent:hover{
+  box-shadow: var(--card-hover-box-shadow);
+  transition: 0.3s ease-in-out;
+  transform: var(--transformY);
+}
 .w3l-testimonials .slider-info {
   border: 1px solid var(--border-color);
   padding: 3rem;

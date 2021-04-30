@@ -2,15 +2,50 @@ var secciones = [];
 var rutas = ["","index", "about", "contact","registro"];
 var bajo_logeo = ["seccion_4"];
 var usuario_logeado = true;
+var resultado;
 
 window.onload = init;
 
 function init(){
     asignarVariables();
     asignarEventos();
+
+    if(resultado)
+    {
+        traerDatos();
+    }
+}
+
+function traerDatos(){
+  fetch('https://api.randomuser.me/?results=8')
+  .then(response => response.json())
+  .then(data => pintarDatos(data));
+}
+
+function pintarDatos(data){
+  //console.dir(data);
+  //console.log(datos.name.first +" " + datos.name.last);
+  //console.log(datos.picture.medium);
+  var datos = data.results; 
+  var temp;
+  var ans = "";
+    
+	//console.log(data.results[0].name.first);
+
+	for(var i in datos)
+	{
+		temp = datos[i];
+		ans+= "<div class='usuario'><img class='img-circle' src='"+temp.picture.medium+"' />";
+		ans+= "<p>";
+		ans+= temp.name.first+" "+temp.name.last;
+		ans+= "</p></div>";
+	}
+
+	resultado.innerHTML = ans;
 }
 
 function asignarVariables(){
+    resultado = document.getElementById("resultado");
     secciones["seccion_1"] = document.getElementById("seccion_1");
     secciones["seccion_2"] = document.getElementById("seccion_2");
     secciones["seccion_3"] = document.getElementById("seccion_3");
