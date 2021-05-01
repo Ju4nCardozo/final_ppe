@@ -1,6 +1,5 @@
 var secciones = [];
 var rutas = ["","index", "about", "contact","registro"];
-var bajo_logeo = ["seccion_4"];
 var usuario_logeado = true;
 var resultado;
 
@@ -65,14 +64,15 @@ function navegacion(event){
     var id = event.target.id;
     var indice = id.split("_")[1];
     var ruta = rutas[indice]+".html";
-    //if(!controlAcceso(id) && usuario_logeado)
+    //if(!controlAcceso(id) && usuario_logeado)//Esto no se utiliza en esta implementación pero se deja comentado por si se necesita reestructurar de alguna manera
     //{
         location.href = ruta;
     //}else{
-       // alert("Error, esta seccion requiere de logeo");
+       // alert("Error, esta seccion requiere de logeo"); //Esto no se utiliza en esta implementación pero se deja comentado por si se necesita reestructurar de alguna manera
     //}
 }
 
+//Esto no se utiliza en esta implementación pero se deja comentado por si se necesita reestructurar de alguna manera
 /*function controlAcceso(indice){
     for(i in bajo_logeo)
     {
