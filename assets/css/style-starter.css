@@ -10492,6 +10492,12 @@ nav#breadcrumbs a:hover {
   transition: 0.3s ease-in-out;
   transform: var(--transformY);
 }
+
+.users{
+  padding-left: 510px;
+  padding-bottom: 50px;
+  color: #ffffff;
+}
 .w3l-testimonials .slider-info {
   border: 1px solid var(--border-color);
   padding: 3rem;
