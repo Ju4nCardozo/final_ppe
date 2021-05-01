@@ -6,3 +6,4 @@ Referente botón wpp: https://ebweb.es/boton-de-whatsapp-html-sin-plugins/
 Referente md5: Aula digital
 Las funcionalidades de rotador de banners y botón hacia arriba estaban implementados en la plantilla, fueron adaptados de acuerdo a la temática escogida por nosotros,
 la renderización de información externa desde una API se vió en clase.
+Para el acceso en el contenido exclusivo de la página web debes autenticarte, sipor alguna razon accedes a otra sección de la página, debes logearte de nuevo (OJO no registrate, solo logearte).
